@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************************
+* Selettori TAG
+************************************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+/************************************************
+* Classi layout
+************************************************/
+.container {
+  max-width: 920px;
+  width: 100%;
+  margin: auto
+}
+
+/************************************************
+* Classi Utilities
+************************************************/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
