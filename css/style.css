@@ -16,8 +16,7 @@ body {
 }
 
 
-header { height: 60px;
-  }
+header { height: 60px;}
          
 
 main { 
@@ -40,7 +39,7 @@ footer { height: 55px;
   padding: 12.5px 14px;}
 
 header button {
-    font-size: 10px;
+    font-size: 11px;
     padding: 8px;
     color: white;
     background-color:rgb(57,57,57);
@@ -54,17 +53,19 @@ header button:nth-of-type(2) {
 
 
 /************************************************
-*main / partecipaints
+*main / user-webcam
 ************************************************/
 
 
-.main-conteiner {height: 100%; }
+.main-conteiner {height: 90vh; }
 
 
 .users-conteiner{ display: flex;
                   justify-content: center;
                   flex-wrap: wrap;
                   height: 100%;
+                  width: 70%;
+                  margin: auto;
                   align-content: flex-start;
                   overflow: hidden;
                   position: relative;
@@ -72,37 +73,47 @@ header button:nth-of-type(2) {
   
                  }
 
-.user-webcam { border: 4px solid black;
-                min-width: 100px;
-                max-width: 250px;
-                min-height: 50px;
-                max-height: 150px;
-                width: calc(100% / 5 - 30px);
-                height: calc(100% / 3);
+.user-webcam  { border: 4px solid black;
+                min-height: 100px;
+                min-width: 150px;
+                width: calc(100% / 5 );
+                height: calc(100% / 6);
                 flex-shrink: 0;
                 background-color: #232427;
                 transition: border-color 0.3s;
+                overflow: hidden;
                }
 
 .partecipaint:hover{border-color: chartreuse;}
+
+
+
 
 /************************************************
 *main / lateral buttons 
 ************************************************/
 
 .main-btn { position: absolute;
-            top:calc(50% - 45px);
-            background-color: #232427;
-            padding: 30px 14px;
+            top:calc(50%);
+            transform: translateY(-50%);
+            padding: 20px 14px;
+            text-align: center;
+            font-size: 15px;
   }
+.arrow {font-size: 40px;}
 
-.main-btn-left { left:0;}
+.arrow-right {color: rgb(46, 186, 255);}
+
+.main-btn-left { left:0;
+                  z-index: 99;
+               }
 
 .main-btn-right { right:0;}
 
 .user-webcam {position: relative;}
 
-.user-webcam img {  max-width: 100%;} 
+.user-webcam img {  object-fit: cover;
+                    width: 100%;} 
 
 .user-webcam>span { background-color: rgba(0,0,0,0.4);
                     padding:5px;
@@ -149,26 +160,22 @@ header button:nth-of-type(2) {
           align-items: center;
           color: #dcdcdc
         }
-                  
-.footer-conteiner ul li{
-             display: flex;
-             color: #dcdcdc;
-             flex-direction: column;
-             justify-content: center;
-             text-align: center;
-             padding: 0 12px;
-                  }
 
-.footer-conteiner ul li a {text-decoration: none;
+
+.footer-conteiner  a {text-decoration: none;
                             color: #dcdcdc;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             text-align: center;
-                            padding: 0 12px;}
+                            padding: 0 15px;}
+
+.footer-conteiner .green {color:rgb(75, 200, 0);}
 
 .footer-conteiner .arrow-down { font-size:14px;
-                                margin-left: -20px;}
+                                margin-left: -5px;}
+
+#contatore {font-size: 12px;}
 
 .disconnect { 
               background-color: #464749;
@@ -178,3 +185,5 @@ header button:nth-of-type(2) {
               font-size: 15px;
               font-weight: bold;
            }
+
+  
