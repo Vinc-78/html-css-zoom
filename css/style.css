@@ -134,8 +134,8 @@ header button:nth-of-type(2) {
                           transform: rotate(35deg);
                           }
 
-
-
+/* Quando clichi su un user il microfono si attiva */
+.user-webcam:focus  span i:after {display: none;}
 
 /************************************************
 * footer
