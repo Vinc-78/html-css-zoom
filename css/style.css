@@ -57,7 +57,7 @@ header button:nth-of-type(2) {
 ************************************************/
 
 
-.main-conteiner {height: 90vh; }
+.main-conteiner {height: 80vh; }
 
 
 .users-conteiner{ display: flex;
@@ -69,6 +69,7 @@ header button:nth-of-type(2) {
                   align-content: flex-start;
                   overflow: hidden;
                   position: relative;
+                  padding-bottom: 40px;
   
   
                  }
@@ -84,7 +85,7 @@ header button:nth-of-type(2) {
                 overflow: hidden;
                }
 
-.partecipaint:hover{border-color: chartreuse;}
+.user-webcam:focus {border-color: chartreuse;}
 
 
 
@@ -129,7 +130,7 @@ header button:nth-of-type(2) {
                           height: 25px;
                           width: 2px;
                           left: 10px;
-                           bottom: 2px;
+                          bottom: 2px;
                           transform: rotate(35deg);
                           }
 
